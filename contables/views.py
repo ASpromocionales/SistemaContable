@@ -984,7 +984,7 @@ def prodTerminado(request,ordenId,periodoId):
 
 	producto = productoTerminado.objects.get(orden_id=ordenId)
 	pan= Pan.objects.get(id=orden.pan_id)
-	return render(request, 'contables/gestionProdTerminado.html',{'prod':producto,'ord':orden,'pan':pan})
+	return render(request, 'contables/gestionProdTerminado.html',{'prod':producto,'ord':orden,'pan':pan, 'periodoId': periodoId})
 
 def asignarPlanilla(request,empleadoId, periodoId):
 	porcentaje_afp=float(0.0675)

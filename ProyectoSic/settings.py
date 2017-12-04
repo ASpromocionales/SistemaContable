@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'contables_db',
         'USER': 'root',
-        'PASSWORD':'',
+        'PASSWORD':'activo23',
         'HOST': 'localhost',
         'PORT': 3306,
     }
